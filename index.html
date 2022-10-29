@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="side-img">
+      <a href="https://www.leagueoflegends.com/en-us/?_gl=1*v30kaz*_ga*MjEzNTc2OTAzNi4xNjU4NjczNTE4*_ga_FXBJE5DEDD*MTY2NzA2MTMwOC4xMC4xLjE2NjcwNjEzOTEuNDUuMC4w&_ga=2.39874786.1793006420.1667048813-2135769036.1658673518"><img src="img/lol-logo.png" alt="riot-games-logo" /></a>
+    </div>
+    <div class="container">
+      <div>
+        <p><em>This is not the real League Of Legends sign up page!</em></p>
+        <p>
+          See that big bad over there? Wanna control him? Sign up now and play
+          Volibear - The Relentless Storm, along with over 100 champions in
+          League Of Legends!
+        </p>
+      </div>
+      <div id="form-label"><a href="https://www.riotgames.com/en"><img src="img/logo.png" /></a>Sign up</div>
+      <form id="form">
+        <div class="input-container">
+          <label for="first-name">First name</label>
+          <div>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              required
+            /><span></span>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="last-name">Last name</label>
+          <div>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+            /><span></span>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="email">Email</label>
+          <div><input type="email" id="email" name="email" /><span></span></div>
+        </div>
+        <div class="input-container">
+          <label for="phone">Phone number</label>
+          <div><input type="tel" name="phone" id="phone" /><span></span></div>
+        </div>
+        <div class="input-container">
+          <label for="password">Password</label>
+          <div>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+              required
+            /><span></span>
+          </div>
+          <div class="note">
+            Password must be at least 8 characters long, includes at least 1
+            uppercase and lowercase letter and 1 special or numeric character
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="password-repeat">Confirm password</label>
+          <div>
+            <input
+              type="password"
+              id="password-repeat"
+              name="password-repeat"
+              required
+            /><span></span>
+          </div>
+          <div id="match"></div>
+        </div>
+      </form>
+      <div>
+        <button type="submit" for="form">Create Account</button> 
+        <div class="acc-exist">
+            Already have an
+            account? <a href="https://signup.leagueoflegends.com/en-us/signup/redownload?page_referrer=index">Click here to download the game</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
