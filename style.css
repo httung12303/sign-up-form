@@ -181,6 +181,7 @@ input:invalid + span:after{
 input:focus,
 input:active {
     border: 3px solid #758BFD;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 input:focus + span:after {
